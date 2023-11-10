@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechKawaii</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-GLhlTQ8iZS+9Lh8KGDeKnG5QkFF0URgPiWceomFkL5Cv5N2kwwxI1KGPVIUn7Zi6" crossorigin="anonymous">
+
+  </head>
+  <style>
+     body {
+      background-image: url("Assests/images/image\ 2.png");
+      
+    }
+    .img-with-shadow {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+    /* body {
+      font-family: "Roboto Condensed", sans-serif;
+    } */
+
+    /* .navbar {
+      background-color: aliceblue;
+    } */
+
+    /* @media (max-width: 768px) {
+      .navbar-toggle {
+        display: block;
+      }
+      .navbar-links {
+        display: none;
+      }
+      .navbar-links-responsive {
+        display: none;
+        flex-direction: column;
+      }
+    }
+
+    /* Adjust the styling of the navbar links for small screens */
+    /* @media (max-width: 576px) {
+      .navbar-links a {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+
+    .navbar-links {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+
+    .navbar-links a {
+      color: #000;
+      margin-right: 50px;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Roboto Condensed";
+    } * */
+    /* 
+    @media (max-width: 768px) {
+      .navbar-links {
+        display: none;
+      }
+
+      .navbar-toggle {
+        display: block;
+        cursor: pointer;
+      }
+
+      .navbar-links-responsive {
+        display: none;
+        flex-direction: column;
+      }
+
+      .navbar-links-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar-links-mobile a {
+        margin: 10px 0;
+      }
+    }
+ */
+
+    /* .navbar-toggle {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-links {
+          display: none;
+        }
+
+        .navbar-toggle {
+          display: block;
+          cursor: pointer;
+        }
+
+        .navbar-links-responsive {
+          display: none;
+          flex-direction: column;
+        }
+      } */
+
+    /* .custom-navbar {
+      background-color: #fff;
+      
+    }
+
+    .navbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-logo {
+      width: 30%;
+    }
+
+    .navbar-links {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+
+    .navbar-links a {
+      color: #000;
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Roboto Condensed";
+      text-decoration: none;
+    }
+
+    .navbar-links a:hover {
+      text-decoration: underline;
+    } */
+
+    /* @media (max-width: 768px) {
+      .navbar-content {
+        flex-direction: column;
+      }
+
+      .navbar-links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .navbar-logo {
+        width: 30%;
+      }
+
+      .navbar-links a {
+        margin: 10px;
+      }
+    } */
+
+    .navbar a:hover{
+      text-decoration: underline;
+    }
+    .content {
+      position: absolute;
+      /* padding: 20%;  */
+      /* position: relative; */
+      padding: 20% 20%;
+      /* margin-top: 1%; */
+      margin-left: -15%;
+      width: 100%;
+      /* height: 400%; */
+    }
+
+    .navbar ul li a {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: Roboto Condensed;
+      /* margin-left: 60px; */
+      /* justify-content: space-between; */
+    }
+
+    .content h1 {
+      color: #4f6268;
+      text-align: center;
+      padding: 5%;
+      font-size: 5vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%;
+      margin-right: 30%;
+      margin-top: -24%;
+      border-radius: 20px;
+      /* height: 21%; */
+      border: 3px solid #c8971a;
+      background: rgba(255, 255, 255, 0.69);
+      box-shadow: 4px 3px 9px 0px #935a26;
+    }
+
+    .tech {
+      color: #4f6268;
+      text-align: center;
+      font-family: Roboto Condensed;
+      font-size: 5vw;
+      font-style: normal;
+      line-height: 100%; /* 68px */
+    }
+
+    #works {
+      background-image: url("Assests/images/image\ 2.png");
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      color: #4f6268;
+      text-align: center;
+      font-family: Roboto Condensed;
+      font-size: 3vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 38px */
+    }
+
+    .btnn {
+      border-radius: 50px;
+      border: 3px solid #4f6268;
+      background: rgba(247, 251, 254, 0);
+      box-shadow: 7px 9px 5px 4px rgba(111, 89, 80, 0.25);
+      width: 20%;
+      color: #4f6268;
+      text-align: center;
+      font-family: Roboto Condensed;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 32px */
+      margin-left: 40%;
+      /* align-items: center;
+      justify-content: center; */
+      margin-top: 3%;
+      /* text-align: center; */
+    }
+
+    .vl {
+      border-left: 5px solid #4f6268;
+      height: 600px;
+      z-index:-1;
+    }
+
+    /* .vl {
+    border-top: 5px solid #4f6268;
+    border-left: none;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 992px) {
+    .vl {
+      border-top: none;
+      border-left: 5px solid #4f6268;
+      width: auto;
+      height: 100%;
+    }
+  } */
+
+    .our {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-right: 9%;
+      padding-left: 9%;
+    }
+
+    .footer {
+      background-color: #e7e7e7;
+      box-shadow: 0px -16px 32px rgba(0, 0, 0, 0.3);
+       font-family: 'Roboto Condensed'; 
+       z-index: 2; 
+      
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
+      /* float: right; */
+    }
+
+    /* .mySlides {
+      display: none;
+      animation: flash 2s infinite;
+    }
+
+    @keyframes flash {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    } */
+
+    /* .mySlides {
+  display: none;
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+    /* .mySlides {
+    display: none;
+    animation: fade 1.5s;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+    hr {
+      background: #897f6c;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .mySlides {
+      display: none;
+      animation: fade 1.5s;
+      transition: opacity 1.5s ease-in-out;
+      text-align: center; /* Center the content */
+    }
+
+    .mySlides:nth-child(4) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .btnn {
+        width: 50%;
+        margin-left: 20%;
+      }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      .btnn {
+        width: 50%;
+        margin-left: 25%;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+      .btnn {
+        width: 40%;
+        margin-left: 30%;
+      }
+    }
+
+    .bitcoin {
+  margin: 30% 0 0 20%; /* Adjust top and left margins as needed */
+  max-width: 100%; /* Adjust the maximum width as needed */
+  height: 490px;
+  border-radius: 50%;
+ overflow:hidden;
+}
+
+.contact {
+  background-color: rgb(16, 79, 104);
+  width:160px;
+  height:45px;
+  color:white;
+  font-size:18px;
+  text-align:center;
+  text-decoration:none;
+  border-radius:25px;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  margin-left:30%;
+  margin-top:10%;
+
+}
+.contact:hover {
+  background-color:green;
+}
+
+
+.image-container {
+    
+            width: 100%;
+            height: 250px; /* Adjust the height as needed */
+            background-color: lightblue; /* Grey background color */
+            border: 1px solid #ddd; /* Grey border */
+            border-radius: 10px; /* Border radius */
+            overflow: hidden;
+            margin-bottom: 20px;
+            padding-top:2%;
+            padding-left:2%;
+        }
+
+        .image-container img {
+            width: 98%;
+            height: 70%;
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+        }
+
+        .image-container1 {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 60%; /* Adjust the height as needed */
+            background-color: lightblue; /* Grey background color */
+            border: 1px solid #ddd; /* Grey border */
+            border-radius: 10px; /* Border radius */
+            overflow: hidden;
+            margin-bottom: 20px;
+           
+        }
+
+        .image-container1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+        }
+
+        .divider-line {
+      border-top: 4px solid #007BFF; /* Blue color */
+      margin-top: 20px; /* Adjust the margin as needed */
+      margin-bottom: 20px;
+      width:30%; /* Adjust the margin as needed */
+    }
+  </style>
+  <body>
+
+   
+    <!-- navbar -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./Assests/images/logofinal_1-removebg-preview.png"
+              class="img-fluid"
+              width="50%"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav ms-auto mb-5 mb-lg-0"
+              style="margin-right: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./index.html"
+                  style="color: #000; margin-right: 50px"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./about.html"
+                  style="color: #000; margin-right: 50px"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./services.html"
+                  style="color: #000; margin-right: 50px"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="contact.html"
+                  style="color: #000; margin-right: 50px"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- <div class="custom-navbar">
+      <div class="container">
+        <div
+          class="navbar-content"
+          style="display: flex; align-items: flex-end"
+        >
+          <div class="navbar-logo">
+            <img
+              src="./Assests/images/logofinal_1-removebg-preview.png"
+              height="100"
+            />
+          </div>
+          <div
+            class="navbar-links"
+            style="
+              margin-right: 20%;
+              justify-content: space-between;
+              margin-bottom: 15px;
+            "
+          >
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="navbar-links-responsive" id="navbarLinks">
+        <div class="navbar-links-mobile">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div> -->
+    
+
+     <!-- ... (previous HTML code) ... -->
+
+
+
+
+     <div class="container mt-5">
+      <div class="row mx-auto">
+          <!-- Image on the Left -->
+          <div class="col-lg-6" style="width:30%; height:30%; margin-left:10%">
+              <img src="./Assests/images/contact_img.png" alt="Left Image" class="img-fluid custom-image">
+          </div>
+  
+          <!-- Contact Form on the Right -->
+          <div class="col-lg-6">
+              <div class="row">
+                  <div class="col-lg-3"></div> <!-- Empty column -->
+                  <div class="col-lg-9">
+                      <p style="color: black;">Contact Us</p>
+                      <p style="color: black; ">Lets <span style="text-decoration: underline; text-decoration-color: #007BFF;"> Connect</span> and Innovate!</p>
+  
+                      <form>
+                          <div class="form-group">
+                              <label for="name" style="font-weight: bold;">Name:</label>
+                              <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                  style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                              <label for="email" style="font-weight: bold;">E-mail:</label>
+                              <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                  style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                              <label for="message" style="font-weight: bold;">Your Message:</label>
+                              <textarea class="form-control" id="message" rows="6" placeholder="Enter your message"
+                                  style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);"></textarea>
+                          </div>
+                          <br>
+                          <div class="text-right">
+                              <button type="submit" class="btn btn-primary"
+                                  style="float: right; background-color: rgb(20, 139, 186); border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Submit</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+      
+  
+
+
+
+    </section>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+
+    <footer class="footer bg-light py-5">
+      <div class="container">
+        <div class="row" style="margin-left: 5%;">
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <h4 style="font-weight: bold;">Tech Kawaii</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <img src="./Assests/images/Broucher.jpg" alt="Brochure Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                <a href="#" class="text-dark text-decoration-none">Download Brochure</a>
+              </li>
+              <li class="mb-2">
+                <img src="./Assests/images/Services.jpg" alt="Services Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                <a href="#" class="text-dark text-decoration-none">Services</a>
+              </li>
+              <li>
+                <img src="./Assests/images/Contactus.jpg" alt="Contact Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                <a href="#" class="text-dark text-decoration-none">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <h4 style="font-weight: bold;">Details</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+              <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Technology</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Vision & Mission</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <h4 style="font-weight: bold;">Follow us on</h4>
+            <ul class="list-unstyled d-flex">
+              <li class="me-4">
+                <img src="./Assests/images/logos_telegram.jpg" alt="Facebook Icon" style="width: 30px; height: 30px;">
+              </li>
+              <li class="me-4">
+                <img src="./Assests/images/skill-icons_instagram.jpg" alt="Instagram Icon" style="width: 30px; height: 30px;">
+              </li>
+              <li>
+                <img src="./Assests/images/facebook.jpg" alt="Telegram Icon" style="width: 30px; height: 30px;">
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-sm-6 mt-3 ">
+           
+            <img src="./Assests/images/logo.png" alt="Big Image" style="width: 300px; height: 300px; margin-left:-30%; margin-top:-5%; margin-bottom:-20%">
+          </div>
+         
+        </div>
+        <hr class="my-4">
+        <p class="text-center" style="font-size: 20px; margin-bottom:-2%">© 2023 Tech Kawaii. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+  
+  
+  
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 3 seconds
+      }
+    </script> -->
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 5 seconds
+      }
+    </script>
+    <!-- 
+<script>
+  function toggleNavbar() {
+    var navbarLinks = document.getElementById("navbarLinks");
+    if (navbarLinks.style.display === "flex") {
+      navbarLinks.style.display = "none";
+    } else {
+      navbarLinks.style.display = "flex";
+    }
+  }
+</script> -->
+  </body>
+</html>
