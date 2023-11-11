@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechKawaii</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-GLhlTQ8iZS+9Lh8KGDeKnG5QkFF0URgPiWceomFkL5Cv5N2kwwxI1KGPVIUn7Zi6" crossorigin="anonymous">
+</head>
+
+<style>
+    body {
+        background-image: url("Assests/images/image\ 2.png");
+        background-repeat: no-repeat;
+        background-size: 100% 82%;
+           
+    }
+
+    .img-with-shadow {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    .content {
+        position: absolute;
+        padding: 20%;
+        margin-left: -15%;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: Roboto Condensed;
+    }
+
+    .content h1 {
+        color: #4f6268;
+        text-align: center;
+        padding: 5%;
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        margin-right: 30%;
+        margin-top: -24%;
+        border-radius: 20px;
+        border: 3px solid #c8971a;
+        background: rgba(255, 255, 255, 0.69);
+        box-shadow: 4px 3px 9px 0px #935a26;
+    }
+
+    .tech {
+        color: #4f6268;
+        text-align: center;
+        font-family: Roboto Condensed;
+        font-size: 5vw;
+        font-style: normal;
+        line-height: 100%;
+    }
+
+    #works {
+        background-image: url("Assests/images/image\ 2.png");
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        color: #4f6268;
+        text-align: center;
+        font-family: Roboto Condensed;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    .btnn {
+        border-radius: 50px;
+        border: 3px solid #4f6268;
+        background: rgba(247, 251, 254, 0);
+        box-shadow: 7px 9px 5px 4px rgba(111, 89, 80, 0.25);
+        width: 20%;
+        color: #4f6268;
+        text-align: center;
+        font-family: Roboto Condensed;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        margin-left: 40%;
+        margin-top: 3%;
+    }
+
+    .vl {
+        border-left: 5px solid #4f6268;
+        height: 600px;
+        z-index: -1;
+    }
+
+    .our {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 9%;
+        padding-left: 9%;
+    }
+
+    .footer {
+        background-color: #e7e7e7;
+        box-shadow: 0px -16px 32px rgba(0, 0, 0, 0.3);
+        font-family: 'Roboto Condensed';
+        z-index: 2;
+    }
+
+    .slideshow-container {
+        position: relative;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    hr {
+        background: #897f6c;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .mySlides {
+        display: none;
+        animation: fade 1.5s;
+        transition: opacity 1.5s ease-in-out;
+        text-align: center; /* Center the content */
+    }
+
+    .mySlides:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .btnn {
+            width: 50%;
+            margin-left: 20%;
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+        .btnn {
+            width: 50%;
+            margin-left: 25%;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        .btnn {
+            width: 40%;
+            margin-left: 30%;
+        }
+    }
+
+    .bitcoin {
+        margin: 30% 0 0 20%;
+        max-width: 100%;
+        height: 490px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .contact {
+        background-color: #110ea4;
+        width: 160px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+
+    .contact:hover {
+        background-color: green;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 250px;
+        background-color: lightblue;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+
+    .image-container img {
+        width: 98%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .image-container1 {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 60%;
+        background-color: lightblue;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .image-container1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .custom-div {
+      border: 1px solid rgb(0, 149, 255);
+      padding: 20px;
+      position: relative;
+      margin-bottom: 20px;
+      background-color:white; 
+      border-radius:30px;
+    }
+
+    .text-inside {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      padding: 0 5px;
+      font-family: 'Roboto Condensed';
+      font-size:25px;
+      color:black;
+      
+    }
+
+    .image-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px; 
+    }
+
+    .image-item {
+      width: calc(100% / 3 - 10px); 
+      box-sizing: border-box; 
+      text-align: center; 
+      margin-bottom: 10px;
+      overflow: hidden; 
+    }
+
+    .image-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .image-item p {
+      font-size: 18px; 
+      margin-top: 5px;
+      font-family: 'Roboto Condensed';
+      color:black;
+    }
+    
+</style>
+
+<body>
+
+    <!-- navbar -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img
+                        src="./Assests/images/logofinal_1-removebg-preview.png" class="img-fluid" width="50%" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-5 mb-lg-0" style="margin-right: 100px">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html"
+                                style="color: #000; margin-right: 50px">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html"
+                                style="color: #000; margin-right: 50px">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html"
+                                style="color: #000; margin-right: 50px">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html"
+                                style="color: #000; margin-right: 50px">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- ... (previous HTML code) ... -->
+    <br>
+    <br>
+    <p>Technolgy <span style="text-decoration: underline; text-decoration-color: #007BFF;">Stacks</span> We Use</p>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-5 custom-div">
+                <div class="text-inside">Gaming Engines</div>
+                <br>
+                <div class="image-container2">
+                    <!-- Add three images at the top for the first div -->
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 16 (1).png" alt="">
+                        <p>Unity 3D</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 17 (1).png" alt="">
+                        <p>Unreal Engine</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 18 (1).png" alt="">
+                        <p>Maya</p>
+                    </div>
+    
+                    <!-- Add three images at the bottom for the first div -->
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 18 (1).png" alt="">
+                        <p>Blender</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 19 (1).png" alt="">
+                        <p>Defold</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 20.png" alt="">
+                        <p>Armony</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+        <!-- Second Column -->
+        <div class="row" style="margin-top:-2%">
+
+            <div class="col-md-7"></div>
+            <div class="col-md-5 custom-div">
+                <div class="text-inside" style="text-align:center">GProgramming Languages</div>
+                <br>
+                <div class="image-container2">
+                   
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 21.png" alt="">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 22.png" alt="">
+                        <p>Python</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 23.png" alt="">
+                        <p>Rust</p>
+                    </div>
+                    <!-- Add three images at the bottom for the second div -->
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 24.png" alt="">
+                        <p>C++</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 25.png" alt="">
+                        <p>Solidity</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 26.png" alt="">
+                        <p>Go Lang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin-top:-2%">
+
+            
+            <div class="col-md-5 custom-div">
+                <div class="text-inside">Frameworks</div>
+                <br>
+                <div class="image-container2">
+                   
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 27.png" alt="">
+                        <p>Node JS</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 28.png" alt="">
+                        <p>React JS</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 29.png" alt="">
+                        <p>Ether JS</p>
+                    </div>
+                    <!-- Add three images at the bottom for the second div -->
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 30.png" alt="">
+                        <p>Web3</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 31.png" alt="">
+                        <p>Next JS</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./Assests/images/Ellipse 32.png" alt="">
+                        <p>Angular</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <footer class="footer bg-light py-5">
+      <div class="container">
+        <div class="row" style="margin-left: 5%;">
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <h4 style="font-weight: bold;">Tech Kawaii</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <img src="./Assests/images/Broucher.jpg" alt="Brochure Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                <a href="#" class="text-dark text-decoration-none">Download Brochure</a>
+              </li>
+              <li class="mb-2">
+                <img src="./Assests/images/Services.jpg" alt="Services Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                <a href="#" class="text-dark text-decoration-none">Services</a>
+              </li>
+              <li>
+                <img src="./Assests/images/Contactus.jpg" alt="Contact Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                <a href="#" class="text-dark text-decoration-none">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <h4 style="font-weight: bold;">Details</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+              <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Technology</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Vision & Mission</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-sm-6 mt-3">
+            <h4 style="font-weight: bold;">Follow us on</h4>
+            <ul class="list-unstyled d-flex">
+              <li class="me-4">
+                <img src="./Assests/images/logos_telegram.jpg" alt="Facebook Icon" style="width: 30px; height: 30px;">
+              </li>
+              <li class="me-4">
+                <img src="./Assests/images/skill-icons_instagram.jpg" alt="Instagram Icon" style="width: 30px; height: 30px;">
+              </li>
+              <li>
+                <img src="./Assests/images/facebook.jpg" alt="Telegram Icon" style="width: 30px; height: 30px;">
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-sm-6 mt-3 ">
+           
+            <img src="./Assests/images/logo.png" alt="Big Image" style="width: 300px; height: 300px; margin-left:-30%; margin-top:-5%; margin-bottom:-20%">
+          </div>
+         
+        </div>
+        <hr class="my-4">
+        <p class="text-center" style="font-size: 20px; margin-bottom:-2%">© 2023 Tech Kawaii. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+  
+  
+  
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 3 seconds
+      }
+    </script> -->
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 5 seconds
+      }
+    </script>
+    <!-- 
+<script>
+  function toggleNavbar() {
+    var navbarLinks = document.getElementById("navbarLinks");
+    if (navbarLinks.style.display === "flex") {
+      navbarLinks.style.display = "none";
+    } else {
+      navbarLinks.style.display = "flex";
+    }
+  }
+</script> -->
+  </body>
+</html>
