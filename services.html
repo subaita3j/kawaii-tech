@@ -343,26 +343,53 @@
 <br>
 
 
+<style>
+  .image-container1 {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  }
+
+  .image-container1:hover img {
+      transform: scale(1.1); 
+  }
+
+  .image-container1 img {
+      transition: transform 0.3s ease;
+  }
+
+  .image-container1 p {
+      font-size: 25px;
+      color: #4f6268;
+      margin-top: 3%;
+      text-align: center;
+  }
+
+  .image-container1 p:last-child {
+      font-size: 20px;
+  }
+</style>
+
 <div class="container">
   <div class="row">
       <div class="col-12 col-md-6 mb-4" style="margin-right: 5%;">
-        <div class="image-container1 mx-auto">
-          <img src="./Assests/images/blockchain_img.png" alt="Image 1" class="img-fluid">
-        </div>
-        <p style="font-size: 25px; color: #4f6268; margin-top: 3%;">BlockChain</p>
-        <p style="font-size: 20px;">BlockChain Software Development</p>
+          <div class="image-container1 mx-auto">
+              <img src="./Assests/images/blockchain_img.png" alt="Image 1" class="img-fluid">
+          </div>
+          <p>BlockChain</p>
+          <p>BlockChain Software Development</p>
       </div>
-      
 
       <div class="col-12 col-md-6 mb-4" style="margin-right: -30%;">
           <div class="image-container1 mx-auto">
               <img src="./Assests/images/fintech_img.png" alt="Image 2" class="img-fluid">
           </div>
-          <p style="font-size: 25px; color: #4f6268; margin-top: 3%;">FinTech</p>
-          <p style="font-size: 20px;">Financial Technology Solutions</p>
+          <p>FinTech</p>
+          <p>Financial Technology Solutions</p>
       </div>
   </div>
 </div>
+
 
 
 
